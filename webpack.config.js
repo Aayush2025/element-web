@@ -98,7 +98,7 @@ module.exports = (env, argv) => {
     } else {
         if (process.env.CI_PACKAGE) {
             // High quality source maps in separate .map files which include the source. This doesn't bulk up the .js
-            // payload file size, which is nice for performance but also necessary to get the bundle to a small enough
+            
             // size that sentry will accept the upload.
             development["devtool"] = "source-map";
         } else {
